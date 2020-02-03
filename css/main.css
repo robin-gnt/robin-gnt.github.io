@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --color-black: rgba(0, 0, 0, 0.897);
+    --color-blue-dark: rgb(16, 39, 112);
+    --color-blue-medium: rgb(36, 72, 190);
+    --color-blue-light: rgb(206, 216, 255);
+    --color-red: rgb(211, 0, 0);
+    --color-green: rgb(0, 177, 9);
+
+    /* Fonts */
+    --font: Ubuntu, sans-serif
+}
+
+html {
+
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--color-blue-light);
+    font-family: var(--font);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    color: var(--color-blue-medium);
+    font-size: 3.5rem;
+}
+
+#pool-overview {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.pool {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 2em;
+    border-radius: .5em;
+    box-shadow: 5px 5px 10px var(--color-black);
+}
+
+.pool-name {
+    text-align: center;
+    margin-top: .8em;
+    color: var(--color-blue-dark);
+    font-size: 2.2rem;
+}
+
+.red {
+    background-color: var(--color-red);
+}
+
+.green {
+    background-color: var(--color-green);
+}
+
+.pool-list {
+    text-align: center;
+    list-style: none;
+    margin-top: .5em;
+    font-size: 1.4rem;
+}
+
+.pool-list li {
+    margin-bottom: .5em;
+}
+
+@media (min-width: 600px) {
+    .pool {
+        width: 80%;
+        height: 190px;
+    }
+
+    .pool-name {
+        font-size: 2.5rem;
+    }
+
+    .pool-list {
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    #pool-overview {
+        width: 75%;
+    }
+
+    .pool {
+        width: 40%;
+        height: 240px;
+        margin: 3em 0;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .pool-name {
+        font-size: 3.5rem;
+    }
+
+    .pool-list {
+        font-size: 2rem;
+    }
+}
