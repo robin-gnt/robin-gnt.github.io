@@ -10,8 +10,8 @@
     --color-blue-dark: rgb(16, 39, 112);
     --color-blue-medium: rgb(36, 72, 190);
     --color-blue-light: rgb(206, 216, 255);
-    --color-red: rgb(211, 0, 0);
-    --color-green: rgb(0, 177, 9);
+    --color-red: rgb(180, 0, 0);
+    --color-green: rgb(0, 160, 8);
 
     /* Fonts */
     --font: Ubuntu, sans-serif
